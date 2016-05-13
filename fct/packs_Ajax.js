@@ -234,7 +234,7 @@ function displaySelPack (data) {
 	$('#modPackLabel').val(data.label);
 //	$('#modPackQteTot').html(qtePack);
 	$('#modPackQteTot').html(data.Qtotale);
-	$('#modPackTarif').html(data.tarifLoc+' €');
+	$('#modPackTarif').html(data.tarifLoc+' F');
 //	$('#modPackValRemp').val(data.valRemp);
 	$('#modPackCateg').val(data.categorie);
 	$('#modPackRem').val(data.remarque);

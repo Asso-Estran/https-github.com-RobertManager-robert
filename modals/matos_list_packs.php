@@ -112,7 +112,7 @@ else $liste_packs = $l->getListe(TABLE_PACKS, '*', 'ref');
 						}
 						($qteNeed > $qteParc) ? $ok = 'insufisant !' : $ok = 'OK.';
 						($qteNeed > $qteParc) ? $classOk = 'ui-state-error' : $classOk = '';
-						echo "<div class='inline padV10 $classOk' style='width:20%;'>$qteNeed x $refM <i class='mini'>($ssTarifLoc €)</i></div><div class='inline padV10 $classOk'>$qteParc $ou, $ok</div><br />";
+						echo "<div class='inline padV10 $classOk' style='width:20%;'>$qteNeed x $refM <i class='mini'>($ssTarifLoc F)</i></div><div class='inline padV10 $classOk'>$qteParc $ou, $ok</div><br />";
 					}
 					echo '<br /></td>
 					</tr>';

@@ -143,7 +143,7 @@ $varsBenefs = substr($varsBenefs,0,strlen($varsBenefs)-1 ) ;
 											
 											<div class='inline mid quart'>
 												<div class='inline mid'><span> X </span>     <span class='matos_PU'   >$pu</span></div>
-												<div class='inline mid'><span> = </span><span class='matos_PRICE'> </span> €</div>
+												<div class='inline mid'><span> = </span><span class='matos_PRICE'> </span> F</div>
 											</div>
 										</div>";
 							}

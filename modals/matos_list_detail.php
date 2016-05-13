@@ -154,11 +154,11 @@ $liste_ssCat = $lm->getListe(TABLE_MATOS_CATEG, '*', 'ordre', 'ASC');
 		</div>
 		<div class="inline top center pad3" style="width: 105px;">
 			<div class="ui-widget-header ui-corner-all">Tarif loc.</div>
-			<input class="NumericInput" type="text" id="modMatosTarif" size="5" /> €
+			<input class="NumericInput" type="text" id="modMatosTarif" size="5" /> F
 		</div>
 		<div class="inline top center pad3" style="width: 105px;">
 			<div class="ui-widget-header ui-corner-all">Val. Remp.</div>
-			<input class="NumericInput" type="text" id="modMatosValRemp" size="6" /> €
+			<input class="NumericInput" type="text" id="modMatosValRemp" size="6" /> F
 		</div>
 		<div class="inline top center pad3" style="width: 90px;">
 			<div class="ui-widget-header ui-corner-all">Qté Parc</div>

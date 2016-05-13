@@ -72,10 +72,10 @@ $liste_packs = $l->getListe(TABLE_PACKS);
 	</div>
 	<div class="inline top" style="width: 220px;">
 		<div class="ui-widget-header ui-corner-all">Tarif location : <b class="red">*</b></div>
-		<input type="text" id="newPackTarifLoc" size="10" /> €
+		<input type="text" id="newPackTarifLoc" size="10" /> F
 		<br />
 		<div class="ui-widget-header ui-corner-all">Valeur remplacement : <b class="red">*</b></div>
-		<input type="text" id="newPackValRemp" size="10" /> €
+		<input type="text" id="newPackValRemp" size="10" /> F
 	</div>
 	<div class="inline top">
 		<div class="ui-widget-header ui-corner-all">Remarque :</div>

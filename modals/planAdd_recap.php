@@ -134,7 +134,7 @@ require_once ('infos_boite.php');
 		$SsTotalCateg[$categ] += $SsTotalMatos[$matId];
 		$totalJour += $SsTotalMatos[$matId];
 		
-		$matosListByCateg[$categ][] = $matQte . ' x ' . $matosById[$matId]['ref'] . ' <span class="mini">('.$SsTotalMatos[$matId].' €)</span><br />';
+		$matosListByCateg[$categ][] = $matQte . ' x ' . $matosById[$matId]['ref'] . ' <span class="mini">('.$SsTotalMatos[$matId].' F)</span><br />';
 	}
 	
 	$totalFinal = $totalJour * $nbJours / coef($nbJours);
@@ -155,16 +155,16 @@ require_once ('infos_boite.php');
 	<div class="inline top tiers">
 		<?php
 		foreach ($SsTotalCateg as $cat => $ssTc) {
-			echo 'total '.strtoupper($cat).' = <b>'.$ssTc.' €</b><br />';
+			echo 'total '.strtoupper($cat).' = <b>'.$ssTc.' F</b><br />';
 		}
 		?>
 	</div>
 	<div class="inline top tiers gros leftText">
-		Pour <?php echo $nbJours; ?> jours : <?php echo number_format($totalJour * $nbJours, 2); ?> €, <b>coef <?php echo coef($nbJours); ?></b><br />
-		<i class="micro">Tarif 1 jour : <?php echo number_format($totalJour, 2); ?> €</i>
+		Pour <?php echo $nbJours; ?> jours : <?php echo number_format($totalJour * $nbJours, 2); ?> F, <b>coef <?php echo coef($nbJours); ?></b><br />
+		<i class="micro">Tarif 1 jour : <?php echo number_format($totalJour, 2); ?> F</i>
 	</div>
 	<div class="inline top tiers rightText">
-		<?php echo '<div class="enorme">TOTAL H.T. : '.number_format($totalFinal, 2).' €</div><div class="enorme">TOTAL T.T.C. : '.number_format($totalFinal + ($totalFinal * TVA_VAL), 2).' €</div>'; ?>
+		<?php echo '<div class="enorme">TOTAL H.T. : '.number_format($totalFinal, 2).' F</div><div class="enorme">TOTAL T.T.C. : '.number_format($totalFinal + ($totalFinal * TVA_VAL), 2).' F</div>'; ?>
 	</div>
 </div>
 

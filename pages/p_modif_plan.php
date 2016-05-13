@@ -124,7 +124,7 @@ foreach ($matosPlanMod as $matId => $matQte) {
 	$SsTotalCateg[$categ] += $SsTotalMatos[$matId];
 	$totalFinal += $SsTotalMatos[$matId];
 
-	$matosListByCateg[$categ][] = $matQte . ' x ' . $matosById[$matId]['ref'] . ' <span class="mini">('.$SsTotalMatos[$matId].' €)</span><br />';
+	$matosListByCateg[$categ][] = $matQte . ' x ' . $matosById[$matId]['ref'] . ' <span class="mini">('.$SsTotalMatos[$matId].' F)</span><br />';
 }
 
 $js = substr($sD, 6); $ms = substr($sD, 4, 2); $as = substr($sD, 0, 4);
@@ -255,13 +255,13 @@ if (!isset($_SESSION['plan_mod_backup'])) $_SESSION['plan_mod_backup'] = array($
 		<div class="inline top tiers padV10">
 			<?php
 			foreach ($SsTotalCateg as $cat => $ssTc) {
-				echo 'total '.strtoupper($cat).' = <b>'.$ssTc.' €</b><br />';
+				echo 'total '.strtoupper($cat).' = <b>'.$ssTc.' F</b><br />';
 			}
 			?>
 		</div>
 		<div class="inline top tiers rightText">
-			<?php echo '<div class="enorme">TOTAL H.T. : '.number_format($totalFinal, 2).' €</div>
-					 <div class="enorme">TOTAL T.T.C. : '.number_format($totalFinal + ($totalFinal * TVA_VAL), 2).' €</div>';
+			<?php echo '<div class="enorme">TOTAL H.T. : '.number_format($totalFinal, 2).' F</div>
+					 <div class="enorme">TOTAL T.T.C. : '.number_format($totalFinal + ($totalFinal * TVA_VAL), 2).' F</div>';
 			?>
 		</div>
 	</div>

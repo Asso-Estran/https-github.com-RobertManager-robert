@@ -141,8 +141,8 @@
 								</div>
 
 								<div class='inline mid quart'>
-									<div class='inline mid demi petit rightText'><span class='matos_PU'>$pu €</span></div>
-									<div class='inline mid demi gros'> = <span class='matos_PRICE'>0</span> €</div>
+									<div class='inline mid demi petit rightText'><span class='matos_PU'>$pu F</span></div>
+									<div class='inline mid demi gros'> = <span class='matos_PRICE'>0</span> F</div>
 								</div>
 							</div>";
 				}
@@ -191,11 +191,11 @@ $liste_ssCat = $lm->getListe(TABLE_MATOS_CATEG);
 	</div>
 	<div class="inline top center pad3" style="width: 120px;">
 		<div class="ui-widget-header ui-corner-all">Tarif loc. : <b class="red">*</b></div>
-		<input class="NumericInput" type="text" id="newMatosTarifLoc" class="addMatosInput" size="6" /> €
+		<input class="NumericInput" type="text" id="newMatosTarifLoc" class="addMatosInput" size="6" /> F
 	</div>
 	<div class="inline top center pad3" style="width: 130px;">
 		<div class="ui-widget-header ui-corner-all">Val. Remp. : <b class="red">*</b></div>
-		<input class="NumericInput" type="text" id="newMatosValRemp" class="addMatosInput" size="8" /> €
+		<input class="NumericInput" type="text" id="newMatosValRemp" class="addMatosInput" size="8" /> F
 	</div>
 	<div class="inline top center pad3" style="width: 120px;">
 		<div class="ui-widget-header ui-corner-all">Qté Parc : <b class="red">*</b></div>

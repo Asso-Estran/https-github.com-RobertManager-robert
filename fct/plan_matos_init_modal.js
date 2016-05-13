@@ -466,10 +466,10 @@ function prixTotal () {
 	$(divSsTotaux).html('');
 	var total = 0 ;
 	for ( cat in prices ) {
-		$(divSsTotaux).append( cat +' : ' + prices[cat] + '€<br />' );
+		$(divSsTotaux).append( cat +' : ' + prices[cat] + 'F<br />' );
 		total += prices[cat] ;
 	}
-	$(divTotal).html('TOTAL : ' + total + '€' );
+	$(divTotal).html('TOTAL : ' + total + 'F' );
 }
 
 
@@ -639,8 +639,8 @@ function matos_list_detail( retour ){
 							+" <div class='inline mid matos_plus'><button class='bouton plus'><span class='ui-icon ui-icon-plusthick'></span></button></div>"
 						+" </div>"
 						+" <div class='inline mid quart'>"
-							+" <div class='inline mid demi petit rightText'><span class='matos_PU'>"+ retour.tarifLoc +" €</span></div>"
-							+" <div class='inline mid demi gros'> = <span class='matos_PRICE'>0</span> €</div>"
+							+" <div class='inline mid demi petit rightText'><span class='matos_PU'>"+ retour.tarifLoc +" F</span></div>"
+							+" <div class='inline mid demi gros'> = <span class='matos_PRICE'>0</span> F</div>"
 						+" </div>"
 				 +" </div>" ;
 

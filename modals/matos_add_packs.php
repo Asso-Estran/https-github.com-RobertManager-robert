@@ -69,10 +69,10 @@ require_once ('checkConnect.php' );
 	</div>
 <!--	<div class="inline top center pad3" style="width: 180px;">
 		<div class="ui-widget-header ui-corner-all">Tarif loc. : <b class="red">*</b></div>
-		<input class="NumericInput" type="text" id="newPackTarifLoc" size="6" /> €
+		<input class="NumericInput" type="text" id="newPackTarifLoc" size="6" /> F
 		<br />
 		<div class="ui-widget-header ui-corner-all margeTop5">Val. Remp. : <b class="red">*</b></div>
-		<input class="NumericInput" type="text" id="newPackValRemp" size="8" /> €
+		<input class="NumericInput" type="text" id="newPackValRemp" size="8" /> F
 	</div>-->
 	<div class="inline top center pad3" style="width: 600px;">
 		<div class="ui-widget-header ui-corner-all">Remarque :</div>
