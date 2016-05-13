@@ -1,6 +1,6 @@
 <?php
 require('FPDF.class.php');
-define('EURO', 'Euros' );
+define('EURO', 'Francs' );
 define('EURO_VAL', 6.55957 );
 
 // Xavier Nicolay 2004
@@ -522,11 +522,11 @@ class PDF_Devisfacture extends FPDF {
 		$y1  = $this->h - $topFromBot;
 		$y2  = $y1+20;
 		$this->RoundedRect($r1, $y1, ($r2 - $r1), ($y2-$y1), 2.5, 'D');
-		$this->Line( $r1+20,  $y1, $r1+20, $y2); // ligne avant "EUROS"
-		$this->Line( $r1+20, $y1+4, $r2, $y1+4); // ligne dessous "EUROS"
+		$this->Line( $r1+20,  $y1, $r1+20, $y2); // ligne avant "FRANCS"
+		$this->Line( $r1+20, $y1+4, $r2, $y1+4); // ligne dessous "FRANCS"
 		$this->SetFont( "Arial", "B", 8);
 		$this->SetXY( $r1+22, $y1 );
-		$this->Cell(15,4, "EUROS", 0, 0, "C");
+		$this->Cell(15,4, "FRANCS", 0, 0, "C");
 		$this->SetFont( "Arial", "", 8);
 		$this->SetFont( "Arial", "B", 6);
 		$this->SetXY( $r1, $y1+5 );
@@ -616,7 +616,7 @@ class PDF_Devisfacture extends FPDF {
 			{
 				$accompteTTC=sprintf ("%.2F", $params["accompte"]);
 				if ( strlen ($params["Remarque"]) == 0 )
-					$this->addRemarque( "Accompte de $accompteTTC Euros exigé à la commande.");
+					$this->addRemarque( "Accompte de $accompteTTC ".EURO." exigé à la commande.");
 				else
 					$this->addRemarque( $params["Remarque"] );
 			}
@@ -628,7 +628,7 @@ class PDF_Devisfacture extends FPDF {
 				$accompteTTC=sprintf("%.2F", $totalTTC * $percent);
 				$percent100 = $percent * 100;
 				if ( strlen ($params["Remarque"]) == 0 )
-					$this->addRemarque( "Accompte de $percent100 % (soit $accompteTTC Euros) exigé à la commande." );
+					$this->addRemarque( "Accompte de $percent100 % (soit $accompteTTC ".EURO.") exigé à la commande." );
 				else
 					$this->addRemarque( $params["Remarque"], $topFromBot );
 			}
@@ -656,9 +656,9 @@ class PDF_Devisfacture extends FPDF {
 		if ($salaires != false) {
 			$this->SetFont( "Arial", "B", 10);
 			$this->SetXY( $re, $y1+21 );
-			$this->Cell(20,6, "A cette somme, vous devrez ajouter ".number_format($salaires, 2)." Euros pour l'emploi des techniciens.", 0, 0, "R");
+			$this->Cell(20,6, "A cette somme, vous devrez ajouter ".number_format($salaires, 2)." ".EURO." pour l'emploi des techniciens.", 0, 0, "R");
 			$this->SetXY( $re, $y1+27 );
-			$this->Cell(20,6, "Le coût total de la prestation sera donc de ".number_format($totalTTC+$salaires, 2, '.', '')." Euros", 0, 0, "R");
+			$this->Cell(20,6, "Le coût total de la prestation sera donc de ".number_format($totalTTC+$salaires, 2, '.', '')." ".EURO, 0, 0, "R");
 		}
 		return number_format($totalTTC, 2);
 	}

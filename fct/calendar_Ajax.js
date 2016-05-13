@@ -553,7 +553,7 @@ function montreDetailsPlan (datas) {
 		if (ssTotalSon != 0) dialogContent += '<div class="rightText">SON : '+ssTotalSon.toFixed(2)+' F</div>';
 		if (ssTotalLight != 0) dialogContent += '<div class="rightText">LUMIÈRE : '+ssTotalLight.toFixed(2)+' F</div>';
 		if (ssTotalStruct != 0) dialogContent += '<div class="rightText">STRUCTURE : '+ssTotalStruct.toFixed(2)+' F</div>';
-		if (ssTotalTransp != 0) dialogContent += '<div class="rightText">TRANSPORT : '+ssTotalTransp.toFixed(2)+' F</div>'
+		if (ssTotalTransp != 0) dialogContent += '<div class="rightText">TRANSPORT : '+ssTotalTransp.toFixed(2)+' F</div>';
 
 		dialogContent += detailMatosStr;
 	}

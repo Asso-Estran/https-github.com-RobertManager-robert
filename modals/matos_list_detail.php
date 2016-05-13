@@ -101,8 +101,8 @@ $liste_ssCat = $lm->getListe(TABLE_MATOS_CATEG, '*', 'ordre', 'ASC');
 							<td>'.$info['ref'].'</td>
 							<td popup="'.$remark.'">'.$info['label'].'</td>
 							<td><img src="./gfx/icones/categ-'.$info['categorie'].'.png" alt="'.$info['categorie'].'" /></td>
-							<td>'.$info['tarifLoc'].' &euro;</td>
-							<td>'.$info['valRemp'].' &euro;</td>
+							<td>'.$info['tarifLoc'].' F</td>
+							<td>'.$info['valRemp'].' F</td>
 							<td'.$popupExterne.'>'.$info['Qtotale'].'</td>
 							<td class="'.$popupPanne.'">'.$qteDispo.'</td>
 							<td class="rightText printHide">

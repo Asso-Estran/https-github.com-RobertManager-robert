@@ -58,7 +58,7 @@ else $liste_matos = $l->getListe(TABLE_MATOS, '*', 'label');
 						<td>'.$info['ref'].'</td>
 						<td>'.$info['label'].'</td>
 						<td><img src="./gfx/icones/categ-'.$info['categorie'].'.png" alt="'.$info['categorie'].'" /></td>
-						<td>'.$info['tarifLoc'].' &euro;</td>
+						<td>'.$info['tarifLoc'].' F</td>
 						<td>'.$info['Qtotale'].$externeTxt.'</td>
 						<td><input type="text" class="inputQteAdd" id="qteAdd-'.$info['id'].'" size="3" /></td>
 						<td class="rightText" style="width:100px;">

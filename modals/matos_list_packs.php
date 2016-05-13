@@ -89,7 +89,7 @@ else $liste_packs = $l->getListe(TABLE_PACKS, '*', 'ref');
 						<td>'.$info['ref'].'</td>
 						<td popup="'.addslashes($info['remarque']).'">'.$info['label'].'</td>
 						<td><img src="./gfx/icones/categ-'.$info['categorie'].'.png" alt="'.$info['categorie'].'" /></td>
-						<td>'.$tarifLoc.' &euro;</td>
+						<td>'.$tarifLoc.' F</td>
 						<td id="qtePack-'.$info['id'].'" '.$popupExterne.'>'.$qteTotale.' pack'.$pluriel.'</td>
 						<td class="rightText">
 							<button class="bouton showPDtr" id="'.$info['id'].'" title="Afficher le détail du pack"><span class="ui-icon ui-icon-search"></span></button>
